@@ -121,6 +121,18 @@ body {
     border-color: var(--text-dark);
 }
 
+.btn-outline.pdf-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: 2px solid #e74c3c;
+}
+
+.btn-outline.pdf-btn:hover {
+    background: linear-gradient(135deg, #c0392b, #a93226);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
 .btn-full {
     width: 100%;
 }
@@ -183,6 +195,20 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.nav-link[href*=".pdf"] {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.nav-link[href*=".pdf"]:hover {
+    color: var(--primary-color);
+}
+
+.nav-link[href*=".pdf"]::before {
+    content: "📄 ";
+    margin-right: 0.25rem;
 }
 
 /* Botón hamburguesa para móviles */
